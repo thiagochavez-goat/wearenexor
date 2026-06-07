@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-gold-light: #F6E2BB;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #B8860B;
+  --color-gold-deep: #8B6508;
+  --color-luxury-black: #050505;
+  --color-luxury-gray: #121212;
+}
+
+/* Custom premium scrollbar and styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252525;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Text selections */
+::selection {
+  background-color: #D4AF37;
+  color: #050505;
+}
+
+/* Premium ambient blur animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.15);
+  }
+}
+
+.luxury-glow-gold {
+  animation: pulseGlow 10s infinite ease-in-out;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF 30%, #D4AF37 70%, #F6E2BB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, #B8860B, #FFF, #AA7C11) 1;
+}
+
+/* Custom radial background to prevent flat solid colors */
+.bg-radial-luxury {
+  background: radial-gradient(circle at center, #111 0%, #050505 100%);
+}
+
