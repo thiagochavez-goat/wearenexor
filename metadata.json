@@ -1,0 +1,6 @@
+{
+  "name": "NEXOR | Luxury Digital Agency Portal",
+  "description": "Una landing page premium e interactiva para la agencia digital de lujo NEXOR, con diseño minimalista, detalles dorados, animaciones inmersivas y un estilo ultra sofisticado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
